@@ -1,0 +1,44 @@
+<form id="passwordForm">
+
+  <label for="password">Enter Password:</label>
+
+  <input type="password" id="password" name="password">
+
+  <button type="submit">Submit</button>
+
+</form>
+
+
+
+<script>
+
+  const passwordForm = document.getElementById("passwordForm");
+
+  passwordForm.addEventListener("submit", function(event) {
+
+    event.preventDefault(); // Prevent default form submission
+
+    const passwordInput = document.getElementById("password").value;
+
+    
+
+    if (passwordInput === "1Game1") {
+
+      window.location.href = "regame.html"; // Redirect to the protected link
+
+if (passwordInput === "1Roman") {
+
+      window.location.href = "Roman.html"; // Redirect to the protected link
+
+
+    } else {
+
+      alert("Incorrect password");
+
+    }
+
+  });
+
+</script>
+script>
+>
